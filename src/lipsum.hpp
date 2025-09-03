@@ -1,4 +1,7 @@
 #pragma once
+#ifndef __cplusplus
+#error lipsum-cpp only supports C++!
+#endif
 #include <vector>
 #include <string>
 #include <iostream>
@@ -18,6 +21,12 @@ std::string GenerateSentence(int minWord = 4, int maxWord = 12);
 //minWord : minimum number of words per sentence
 //maxWord : maximum number of words per sentence
 std::string GenerateParagraph(int minSent = 5, int maxSent = 8, int minWord = 4, int maxWord = 12);
+//Generate multiple paragraphs
+//Takes in five ints: paraCount, minSent, maxSent, minWord, and maxWord.
+//By default 5, 5, 8, 4, and 12.
+//paraCount : number of paragraphs
+//rest explained in above function
+std::string GenerateParagraphList(int paraCount = 5, int minSent = 5, int maxSent = 8, int minWord = 4, int maxWord = 12);
 }
 #ifdef LIPSUM_IMPLEMENTATION
 std::string lipsum::GenerateSentence(int minWord, int maxWord)
@@ -58,6 +67,15 @@ std::string lipsum::GenerateParagraph(int minSent, int maxSent, int minWord, int
         result += GenerateSentence(minWord, maxWord) += " ";
     }
     result += "\n";
+    return result;
+}
+std::string lipsum::GenerateParagraphList(int paraCount, int minSent, int maxSent, int minWord, int maxWord)
+{
+    std::string result;
+    for(int i = 0; i < paraCount; ++i)
+    {
+        result += lipsum::GenerateParagraph(minSent, maxSent, minWord, maxWord);
+    }
     return result;
 }
 #endif
