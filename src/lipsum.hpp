@@ -9,6 +9,8 @@
 #include <cctype>
 namespace lipsum
 {
+//Generate a random word.
+std::string GenerateWord();
 //Generate a random sentence.
 //Takes in an int minWord and an int maxWord, which are by default 4 and 12.
 //minWord : minimum number of words, maxWord : maximum number of words
@@ -29,19 +31,25 @@ std::string GenerateParagraph(int minSent = 5, int maxSent = 8, int minWord = 4,
 std::string GenerateParagraphList(int paraCount = 5, int minSent = 5, int maxSent = 8, int minWord = 4, int maxWord = 12);
 }
 #ifdef LIPSUM_IMPLEMENTATION
-std::string lipsum::GenerateSentence(int minWord, int maxWord)
+std::string lipsum::GenerateWord()
 {
 #include "lipsum.inl"
-    std::string result;
     static std::random_device rd;
     static std::mt19937 gen(rd());
     std::uniform_int_distribution<> dist(0, lipsumVec.size() - 1);
+    return lipsumVec.at(dist(gen));
+}
+std::string lipsum::GenerateSentence(int minWord, int maxWord)
+{
+    std::string result;
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
     std::uniform_int_distribution<> dist2(minWord, maxWord);
     int words = dist2(gen);
     bool includecomma = (words >= (maxWord * 4) / 5);
     for(int i = 0; i < words; ++i)
     {
-        result += lipsumVec.at(dist(gen));
+        result += lipsum::GenerateWord();
         if(includecomma && i == (words / 2) - 1)
         {
             result += ",";

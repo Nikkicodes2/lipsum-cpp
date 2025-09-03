@@ -1,4 +1,4 @@
-std::vector<std::string> lipsumVec = {"lorem",
+static std::vector<std::string> lipsumVec = {"lorem",
 "ipsum",
 "dolor",
 "sit",

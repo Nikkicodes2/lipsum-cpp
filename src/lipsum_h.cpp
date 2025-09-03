@@ -13,3 +13,7 @@ const char* lpsm_GenerateParagraphList(int paraCount, int minSent, int maxSent, 
 {
     return lipsum::GenerateParagraphList(paraCount, minSent, maxSent, minWord, maxWord).c_str();
 }
+const char* lpsm_GenerateWord(void)
+{
+    return lipsum::GenerateWord().c_str();
+}

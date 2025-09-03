@@ -12,6 +12,7 @@ extern "C"
 const char* lpsm_GenerateSentence(int minWord, int maxWord);
 const char* lpsm_GenerateParagraph(int minSent, int maxSent, int minWord, int maxWord);
 const char* lpsm_GenerateParagraphList(int paraCount, int minSent, int maxSent, int minWord, int maxWord);
+const char* lpsm_GenerateWord(void);
 #ifdef __cplusplus
 }
 #endif
